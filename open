@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2020년을 보내며</title>
+    <!-- 탭 내용 -->
+
+
+    <link rel="shortcut icon" href="https://freepngimg.com/download/universe/32959-3-moon-clipart.png">
+    <!-- favicon -->
+
+    <meta property="og:image"
+        content="https://postfiles.pstatic.net/MjAyMTAxMDlfMjIz/MDAxNjEwMTIxMzkxMDkz.IZjFsPn9M5KzHGiDbqn-L0feC5ADKw67HIoZB_rOAAMg.9DDvhdbJzlE-uRDyFO9fBJSbLpepC6BJ06wIaEaxwS8g.JPEG.invent28/EASTERN_MOON.jpg?type=w966">
+    <meta property="og:title" content="EASTERN MOON">
+    <meta property="og:description" content="초대합니다">
+    <!-- og 태그 카톡 전송할때 뜨는 화면 -->
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <!-- 배경 스크립트 (눈내리는 배경) -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <!-- 구글 폰트 주소 -->
+    <style>
+        * {
+            font-family: 'Poor Story', cursive;
+        }
+        /* 구글 폰트 주소 */
+
+        body {
+            background-color: black;
+        }
+        /* 전체 배경화면 */
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url(https://pngimg.com/uploads/envelope/envelope_PNG18366.png);
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor: pointer;
+            /* 커서 모양 포인터로 변경 */
+        }
+        /* 편지봉투 이미지 */
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .rtan {
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://postfiles.pstatic.net/MjAyMTAxMDlfMjIg/MDAxNjEwMTIyODg1NTc4.Z1G7Fdy0hDFUNf_RYP6Gp_q6UrI9I0HkrUh_4cpSjXYg.k7yQDsOn7pCS0lRUsgUBPZtIq4hl4cjBulUVhF2KZNYg.GIF.invent28/%ED%95%84%EC%9A%94_%EB%AC%BC%ED%92%88_%EB%AA%A9%EB%A1%9D_(1).gif?type=w966');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+            /* 백그라운드 라운드 */
+
+            box-shadow: 0px 0px 30px 0px white
+            /* 그림자 효과 */
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .messagebox {
+            background-color: ivory;
+
+            width: 400px;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            /* if 모바일 버전 */
+            .messagebox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+
+    <script>
+
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+        // 화면전환
+
+        function go_rtan() {
+            alert('감사합니다!');
+            window.location.href = 'https://docs.google.com/spreadsheets/d/1N7dzCvZ0f2I9PMYoNoPx_YNISQCxi0bvjXx3Uutp_bI/edit?usp=sharing'
+        }
+        // 사이트 이동
+
+    </script>
+</head>
+
+<body>
+
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <!-- onclick 클릭 함수 -->
+        <h2 class="envelope-msg">초대장  입니다.</h2>
+    </div>
+
+    <div class="letter-open">
+        <div class="rtan" onclick="go_rtan()"></div>
+        <h1>EASTERN MOON OPEN</h1>
+        <div class="messagebox">
+            화환이나 화분은 보내주시고자 하신 <br />
+            <!-- <br /> 줄바꿈 -->
+            마음만으로도 충분합니다. <br />
+            오시는 것만으로도 힘이 날거에요. <br />
+            고맙습니다. <br />
+            개업식 일정은 5인이상 모임 금지 해지되는날 <br />
+            즐거운 시간 함께 보내요. <br />
+            <!-- 위에껀 왼쪽정렬 아래껀 오른쪽정렬 -->
+            <p class="from">EASTERN MOON</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
